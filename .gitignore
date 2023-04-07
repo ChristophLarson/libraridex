@@ -2,7 +2,8 @@
 /node_modules
 /.pnp
 .pnp.js
-03-frontend/react-library/
+03-frontend/react-library/node_modules/
+03-frontend/react-library/.vscode/
 
 # testing
 /coverage
