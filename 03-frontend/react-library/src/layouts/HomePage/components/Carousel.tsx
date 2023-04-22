@@ -48,11 +48,7 @@ export const Carousel = () => {
   }, []);
 
   if (isLoading) {
-    return (
-      <div className='container m-5'>
-        <p>Loading...</p>
-      </div>
-    );
+    return <p>Loading...</p>;
   }
 
   if (httpError) {
@@ -71,7 +67,7 @@ export const Carousel = () => {
       <div
         id='carouselExampleControls'
         className='carousel carousel-dark slide mt-5 
-              d-none d-lg-block'
+                d-none d-lg-block'
         data-bs-interval='false'
       >
         {/* Desktop */}
@@ -90,12 +86,12 @@ export const Carousel = () => {
               ))}
             </div>
           </div>
-        </div>
-        <div className='carousel-item'>
-          <div className='row d-flex justify-content-center align-items-center'>
-            {books.slice(6, 9).map((book) => (
-              <ReturnBook book={book} key={book.id} />
-            ))}
+          <div className='carousel-item'>
+            <div className='row d-flex justify-content-center align-items-center'>
+              {books.slice(6, 9).map((book) => (
+                <ReturnBook book={book} key={book.id} />
+              ))}
+            </div>
           </div>
         </div>
         <button
@@ -130,11 +126,7 @@ export const Carousel = () => {
           <ReturnBook book={books[7]} key={books[7].id} />
         </div>
       </div>
-      <div className='homepage-carousel-title mt-3'>
-        <a className='btn btn-outline-secondary btn-lg' href='#'>
-          View More
-        </a>
-      </div>
+      <div className='homepage-carousel-title mt-3'></div>
     </div>
   );
 };

@@ -10,7 +10,7 @@ import lombok.Data;
 
 @Entity
 @Table(name = "book")
-@Data // lombok
+@Data
 public class Book {
 
 	@Id
@@ -38,5 +38,4 @@ public class Book {
 
 	@Column(name = "img")
 	private String img;
-
 }
